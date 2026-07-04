@@ -1,0 +1,68 @@
+/* Oschertator Design Tokens */
+:root {
+  --vault-bg: #060906;
+  --vault-panel: #0a0f0a;
+  --vault-accent: #c8f04b;
+  --vault-accent-dim: #7a9430;
+  --vault-text: #e8ece2;
+  --vault-muted: #6b7264;
+  --vault-rule: #1c231c;
+  --vault-danger: #f0654b;
+  --vault-font-mono: "JetBrains Mono", "IBM Plex Mono", ui-monospace, monospace;
+  --vault-font-sans: "Inter", ui-sans-serif, sans-serif;
+}
+
+/* Base Reset */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: var(--vault-font-sans);
+  background: var(--vault-bg);
+  color: var(--vault-text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+}
+
+input,
+button,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  color: var(--vault-accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+::selection {
+  background: var(--vault-accent-dim);
+  color: var(--vault-bg);
+}

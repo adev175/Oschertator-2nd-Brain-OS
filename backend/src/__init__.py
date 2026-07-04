@@ -1,0 +1,1 @@
+"""Oschertator backend - standalone app."""
